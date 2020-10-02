@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<h1 id="title">Survey form</h1>
+		<p id="description">Taking you opinion since for ever</p>
+		<form id="survey-form" action="">
+			<label for="name" id="name-label">Name</label>
+			<input type="text" id="name" name="name" required placeholder="Enter your name">
+			<label for="email" id="email-label">Email</label>
+			<input type="email" id="email" name="email" required placeholder="Enter your email">
+			<label for="number" id="number-label">Number</label>
+			<input type="number" id="number" name="number" min="1" max="10" required placeholder="How many stars do we deserve?">
+
+			<br>
+			<select name="service" id="dropdown">
+				<option value="Amatuer Film">Amatuer Film</option>
+				<option value="Technology">Programming and Applications</option>
+				<option value="Web Development">Web Development</option>
+			</select>
+
+			<br>
+			Emergency?
+			<label><input type="radio" name="emergency" value="yes">Yes</label>
+			<label><input type="radio" name="emergency" value="no" checked>No</label>
+
+			<br>
+			<label><input type="checkbox" name="interests" value="html">HTML</label>
+			<label><input type="checkbox" name="interests" value="css">CSS</label>
+			<label><input type="checkbox" name="interests" value="js">JS</label>
+			<label><input type="checkbox" name="interests" value="php">PHP</label>
+			
+			<br>
+			<textarea name="additional-comments" id="additional-comments" cols="30" rows="10" placeholder="Addtional comments"></textarea>
+
+			<br>
+			<input type="submit" id="submit" value="Complete">
+		</form>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
